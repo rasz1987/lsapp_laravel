@@ -30,3 +30,7 @@ Route::get('/services', 'PagesController@services');
 route::resource('posts', 'PostsController');
 
 
+
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('home');
