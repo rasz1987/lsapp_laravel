@@ -10,7 +10,7 @@
     
     <div class="row">
         <div class="col-md-12 ">
-            {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/data']) !!}
+            {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 
                 <div class="form-group">
                     {{Form::label('title', 'Title')}}
@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="form-group">
-                    {{Form::file('cover-image')}}
+                    {{Form::file('cover_image')}}
                 </div>
                 
                     {{Form::submit('Submit', ['class' => 'btn btn-primary btn-block'])}}

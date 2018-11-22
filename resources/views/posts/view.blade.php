@@ -11,6 +11,10 @@
     <div class="row">
         <div class="col-md-12">
             <h1>{{$post->title}}</h1>
+            <div class="col-md-4 col-sm-4">
+            <img style="width:100%; " src={{asset("storage/cover_images/$post->cover_image")}} />
+            </div>
+            <br><br>
         </div>
     </div>
 
