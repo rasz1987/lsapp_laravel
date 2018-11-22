@@ -14,7 +14,7 @@
                 <div class="card col-md-12 mb-3">
                     <div class="card-body ">
                         <h3><a href="/lsapp/public/posts/{{$post->id}}" >{{$post->title}}</a></h3>
-                        <small>write on {{$post->created_at}}</small>
+                    <small>write on {{$post->created_at}} by {{$post->user->name}}</small>
                     </div>
                 </div>
             </div>

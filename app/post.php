@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Post extends Model 
 {
     //Table Name
     protected $table = 'posts';
@@ -14,6 +14,6 @@ class Post extends Model
     public $timestamps = true;
 
     public function user() {
-        return $this->belongTo('App\User');
+        return $this->belongsTo('App\User');
     }
 }
